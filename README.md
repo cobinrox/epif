@@ -63,7 +63,7 @@ This screen appears when the Admin button from the main screen is selected (it i
 
 
 
-4. When you are ready to test out what you have built on the site (the "app"), there are several ways to test, but note that each method has its idiosyncracies and some just suck.
+4. When you are ready to test out what you have built on the site (the "app"), there are several ways to test, but note that each method has its quirks and some just suck.
      - OPTION 1: Run the app on an MIT AI2 tool/emulator that runs on your laptop.  This is nice and easy to use but the emulator does not always work right.  You can run other emulators on your laptop.  The MIT AI2 emulator comes bundled in a program called the MIT AI2 Tools (which is confusing) and the emulator is called the "ai starter" (also confusing).  its start up is demonstrated in the following figures.
 
           - Start up the emulator (aka "ai starter") from the MIT AI2 Tools app on your laptop, this will start up a command-line terminal
@@ -76,6 +76,7 @@ This screen appears when the Admin button from the main screen is selected (it i
           - </i><img src="./images/mit_emulator_pt2.png" width="300" height="300">
           - Eventually the web site and the emulator will sync up and you should see your app running on the emulator on your laptop
           - </i><img src="./images/mit_emulator_pt3.png" width="300" height="300">
+     - UPDATE ON OPTION 1: as of this writing the AI2 Starter/Tools/Emulator program doesn't work on Windows 11.  There are other emulator tools that you can use that also do not work on Windows 11.  One that does work/w Win11 is Bluestacks.
 
 
      - OPTION 2: Run the app on an actual android phone through the MIT AI2 Companion that runs on your phone.  You have to download the MIT AI2 Companion onto your phone first, and your MIT AI2 app runs <i>inside</i> of the Companion app.   This is nice but can be tedious because you have to fumble with your phone.  Usually, once your app is running within the Companion app, you can tweak the app's components on the MIT AI2 web site and the changes re reflected automatially (with a slight delay) onto the phone.  Sometimes, though, the Companion app will crash.  For this option you have to:
