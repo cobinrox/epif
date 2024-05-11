@@ -49,6 +49,13 @@ This screen appears when the Admin button from the main screen is selected (it i
 
 
 ## Notes on MIT AI2 Development
+'Tis important to recognize the different parts that MIT AI2 is made of:
+    - MIT AI2 Web site: This is where you develop your code
+    - Your App: This is the "app" or project that you put together on the web site
+    - MIT "tools" program with "aistarter": This is a program you can run on your laptop to (sometimes) run an MIT android emulator
+    - MIT "Companion App": This is an android app that you run on your phone (or sometimes on an android emulator) that acts as a way to download your app from the web site down to your phone (or emulator) easily
+    - Non-MIT emulators: These are programs that can run on your laptop and emulate an android phone device.  Some well-known in the community are the Bluestacks and Android Studio emulators.
+    
 1.  Development is performed on-line (internet connection required!) on the MIT AI2 site.  <i>Note: there are ways to develop offline, e.g. see https://github.com/cobinrox/ai2offline for developing off-line using docker containers.
 
 </i><img src="./images/mit_ai2_mainscreen.png" width="300" height="300">
@@ -64,8 +71,8 @@ This screen appears when the Admin button from the main screen is selected (it i
 
 
 
-4. When you are ready to test out what you have built on the site (the "app"), there are several ways to test, but note that each method has its quirks and some just suck.
-     - OPTION 1: Run the app on an MIT AI2 tool/emulator that runs on your laptop.  This is nice and easy to use but the emulator does not always work right.  You can run other emulators on your laptop.  The MIT AI2 emulator comes bundled in a program called the MIT AI2 Tools (which is confusing) and the emulator is called the "ai starter" (also confusing).  its start up is demonstrated in the following figures.
+4. When you are ready to test out what you have built on the web site (your "app"), there are several ways to test, but note that each method has its quirks and some just suck.
+     - OPTION 1: Run your app on an MIT AI2 tool/emulator that runs on your laptop.  This is nice and easy to use but the MIT AI2 emulator does not always work right, especially on Win11.  The MIT AI2 emulator comes bundled in a program called the MIT AI2 Tools (which is confusing) and the MIT emulator is started up by  the "ai starter" program (also confusing).  Its (aistarter/emulator) use is demonstrated in the following steps and figures.
 
           - Start up the emulator (aka "ai starter") from the MIT AI2 Tools app on your laptop, this will start up a command-line terminal
           - </i><img src="./images/mit_emulator_on_windows.png" width="300" height="300">
@@ -77,12 +84,13 @@ This screen appears when the Admin button from the main screen is selected (it i
           - </i><img src="./images/mit_emulator_pt2.png" width="300" height="300">
           - Eventually the web site and the emulator will sync up and you should see your app running on the emulator on your laptop
           - </i><img src="./images/mit_emulator_pt3.png" width="300" height="300">
-     - UPDATE ON OPTION 1: as of this writing the AI2 Starter/Tools/Emulator program doesn't work on Windows 11.  There are other emulator tools that you can use that also do not work on Windows 11.  One that does work/w Win11 is Bluestacks.  After installing Bluestacks on your laptop, start up Bluestacks and its emulator, then follow the info in OPTION 2, for running on a third-party emulator
-     - OPTION 2: Run the app on a third party android emulator (such as Bluestacks, Android Studio) on your laptop.  Here you'll have to install an emulator on your laptop, there are several different emulators available.  For Bluestacks, install and set up are pretty straight-forward.  For Android Studio emulator, it's a contortionist trick but be sure that if creating through Android Studio that you select an emulator that includes the Google Play Store in the API.  So the basic steps for this option are, depending on the emulator you are using:
+     - UPDATE ON OPTION 1: as of this writing the AI2 Starter/Tools/Emulator program doesn't work on Windows 11.  If you wan to run an emulator on W11, try checkign out Option 2 below.
+     - OPTION 2: Run your app on a third party non-MIT android emulator (such as Bluestacks, Android Studio) on your laptop.  Here you'll have to install an emulator on your laptop, there are several different emulators available.  For Bluestacks, install and set up are pretty straight-forward.  For Android Studio emulator, it's a contortionist trick but be sure that if creating through Android Studio that you select an emulator that includes the Google Play Store in the API.  So the basic steps for this option are, depending on the emulator you are using:
          - After installing and setting up the emulator, run it
          - Weird, but inside of the emulator, run the Google Playstore App (if GPA is not installed on the emulator, then you'll have to go back and choose a different emulator or find another way to install GPA on it)
          - From within the GPA on the running emulator, search and install the MIT AI2 Companion application
          - Once MIT AI2 Companion is installed, you should be able to follow the steps in OPTION 3 below.
+    - UPDATE ON OPTION 2: well the MIT AI2 Companion App does not always work properly any longer on some emulators so you will have to use Option 4 to get your app running on an emulator on your laptop.
 
 
      - OPTION 3: Run the app on an actual android phone (or emulator) through the MIT AI2 Companion that runs on your phone (or emulator).  You have to download the MIT AI2 Companion onto your phone first, and your MIT AI2 app will run <i>inside</i> of the Companion app: i.e. your app will not actually be running "natively" on your phone/emulator: it runs within the MIT AI2 Companion that is running on your phone/emulator.   This option is nice if you want to run on your actual phone,  but can be tedious because you have to fumble with your phone.  Usually, once your app is running within the Companion app, you can tweak your app's components/code on the MIT AI2 web site and the changes get reflected automatially (with a slight delay) onto the phone/emulator.  (Sometimes, though, the Companion app will crash on the phone/emulator.)  For this option you have to:
@@ -93,14 +101,14 @@ This screen appears when the Admin button from the main screen is selected (it i
           - Back on your phone/emulator, inside the Companion app, enter the 4-digit number (or you can try using the QR code, though sometimes that does not work)
           - Your app will be downloaded from the web site and will start running inside the Companion app on your phone.
 
-     - OPTION 4: Build the app and then download the actual app as an apk file to your phone.  This is very tedious but can give you the best bet of how your app will behave.  There are several ways to do this, but the most straight-forward is:
+     - OPTION 4: Build the app and then download the actual app as an apk file to your phone (or emulator).  This is very tedious but can give you the best bet of how your app will behave.  There are several ways to do this, but the most straight-forward is:
           - On the MIT AI2 web site, choose the "Build .apk" option
           - The web site will compile and bundle your app into an apk file and then pop up a screen with a both download link and QR code.  
           - </i><img src="./images/mit_ai2_build.png" width="300" height="300">
-          - There are several ways to download and install the .apk file, but to simply download and install on a phone, you can do the following sub-steps.
-          - Right mouse click on the link and save the copy link address to a text editor on your laptop, this will allow you to actually view the link that you will need
-          - On the phone, bring up a browser and in the browser search bar, enter the link that from the above step
-          - The browser on the phone will give you nag screens about the safety of the app, but confirm to download it, and then the browser should nag and confirm to install it, and then finally, there should be yet another nag and confirm to start the app.  If the latter does not appear, then yoiu should be able to go to the Apps list on the phone and see your newly downloaded and installed app.
+          - There are several ways to download and install the .apk file, but to simply download and install on a phone/emulator, you can do the following sub-steps.
+          - Right mouse click on the link and save the copy link address to the clip board. If you are actually going to install on a physical phone, then also copy to a text editor on your laptop, this will allow you to actually view the link that you will need
+          - On the phone/emulator, bring up a browser app and in the browser search bar, enter the link that from the above step
+          - The browser on the phone/emulator will give you nag screens about the safety of the app, but confirm to download it, and then the browser should nag and confirm to install it, and then finally, there should be yet another nag and confirm to start the app.  If the latter does not appear, then yoiu should be able to go to the Apps list on the phone and see your newly downloaded and installed app.
    
 
 
