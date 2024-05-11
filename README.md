@@ -76,18 +76,23 @@ This screen appears when the Admin button from the main screen is selected (it i
           - </i><img src="./images/mit_emulator_pt2.png" width="300" height="300">
           - Eventually the web site and the emulator will sync up and you should see your app running on the emulator on your laptop
           - </i><img src="./images/mit_emulator_pt3.png" width="300" height="300">
-     - UPDATE ON OPTION 1: as of this writing the AI2 Starter/Tools/Emulator program doesn't work on Windows 11.  There are other emulator tools that you can use that also do not work on Windows 11.  One that does work/w Win11 is Bluestacks.
+     - UPDATE ON OPTION 1: as of this writing the AI2 Starter/Tools/Emulator program doesn't work on Windows 11.  There are other emulator tools that you can use that also do not work on Windows 11.  One that does work/w Win11 is Bluestacks.  After installing Bluestacks on your laptop, start up Bluestacks and its emulator, then follow the info in OPTION 2, for running on a third-party emulator
+     - OPTION 2: Run the app on a third party android emulator (such as Bluestacks, Android Studio) on your laptop.  Here you'll have to install an emulator on your laptop, there are several different emulators available.  For Bluestacks, install and set up are pretty straight-forward.  For Android Studio emulator, it's a contortionist trick but be sure that if creating through Android Studio that you select an emulator that includes the Google Play Store in the API.  So the basic steps for this option are, depending on the emulator you are using:
+         - After installing and setting up the emulator, run it
+         - Weird, but inside of the emulator, run the Google Playstore App (if GPA is not installed on the emulator, then you'll have to go back and choose a different emulator or find another way to install GPA on it)
+         - From within the GPA on the running emulator, search and install the MIT AI2 Companion application
+         - Once MIT AI2 Companion is installed, you should be able to follow the steps in OPTION 3 below.
 
 
-     - OPTION 2: Run the app on an actual android phone through the MIT AI2 Companion that runs on your phone.  You have to download the MIT AI2 Companion onto your phone first, and your MIT AI2 app runs <i>inside</i> of the Companion app.   This is nice but can be tedious because you have to fumble with your phone.  Usually, once your app is running within the Companion app, you can tweak the app's components on the MIT AI2 web site and the changes re reflected automatially (with a slight delay) onto the phone.  Sometimes, though, the Companion app will crash.  For this option you have to:
-          - Download and install the MIT AI2 Companion program to your phone.
-          - Start the Companion program on your phone.
+     - OPTION 3: Run the app on an actual android phone (or emulator) through the MIT AI2 Companion that runs on your phone (or emulator).  You have to download the MIT AI2 Companion onto your phone first, and your MIT AI2 app will run <i>inside</i> of the Companion app: i.e. your app will not actually be running "natively" on your phone/emulator: it runs within the MIT AI2 Companion that is running on your phone/emulator.   This option is nice if you want to run on your actual phone,  but can be tedious because you have to fumble with your phone.  Usually, once your app is running within the Companion app, you can tweak your app's components/code on the MIT AI2 web site and the changes get reflected automatially (with a slight delay) onto the phone/emulator.  (Sometimes, though, the Companion app will crash on the phone/emulator.)  For this option you have to:
+          - Download and install the MIT AI2 Companion program to your phone/emulator.
+          - Start the Companion program on your phone/emulator.
           - From the MIT AI2 web site, choose the Connect, then AI Companion option
           - The MIT AI2 web site will pop up a QR code and a 4-digit number
-          - Back on your phone, inside the Companion app, enter the 4-digit number (or you can try using the QR code, though sometimes that does not work)
+          - Back on your phone/emulator, inside the Companion app, enter the 4-digit number (or you can try using the QR code, though sometimes that does not work)
           - Your app will be downloaded from the web site and will start running inside the Companion app on your phone.
 
-     - OPTION 3: Build the app and then download the actual app as an apk file to your phone.  This is very tedious but can give you the best bet of how your app will behave.  There are several ways to do this, but the most straight-forward is:
+     - OPTION 4: Build the app and then download the actual app as an apk file to your phone.  This is very tedious but can give you the best bet of how your app will behave.  There are several ways to do this, but the most straight-forward is:
           - On the MIT AI2 web site, choose the "Build .apk" option
           - The web site will compile and bundle your app into an apk file and then pop up a screen with a both download link and QR code.  
           - </i><img src="./images/mit_ai2_build.png" width="300" height="300">
