@@ -39,7 +39,8 @@ This is the main screen.  Here, a cashier highlights a customer and, if the cust
 
 #### Payment Confirmation View
 This screen appears when the cashier presses the APPLY button.  If the OK button is pressed, then the number of tokens entered on the main screen will be deleted from the customer's account (in the Sqlite customer table) and the amount of tokens used during the day will be updated  (in the Sqlite orders table)
-(sorry, image not available due to crappy emulator)
+<img src="./images/mit_ai2_confirm2.png" width="200" height="200">
+
 
 #### Admin View
 This screen appears when the Admin button from the main screen is selected (it is password protected so a pop-up password screen appears first).  This screen allows the admin to create/update/delete customers.  It also has a button that will reset all customers' token amount when a new month rolls over (there is a protection to prevent multiple roll overs in a single month).
