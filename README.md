@@ -60,16 +60,15 @@ This screen appears when the Admin button from the main screen is selected (it i
     - Non-MIT emulators: These are programs that can run on your laptop and emulate an android phone device.  Some well-known in the community are the Bluestacks and Android Studio emulators.
     
 1.  Development is performed on-line (internet connection required!) on the MIT AI2 site.  <i>Note: there are ways to develop offline, e.g. see https://github.com/cobinrox/ai2offline for developing off-line using docker containers.
-
-</i><img src="./images/mit_ai2_mainscreen.png" width="300" height="300">
+</i>
+<img src="./images/mit_ai2_mainscreen.png" width="300" height="300">
 
 
 
 2.  Always use the Vertical and Horizontal layouts to place your components
 
-3.  To create the sense of multiple screens but using only one physical screen, use multiple Vertical layouts for each screen, and set the visible checkbox to on and off to see them in the developer view.  The advantage of having just one physical screen and hide/view the various Vertical layouts is that you can use the block code (variables/methods) across the components, whereas doing so between physical screens is difficult.  The disadvantage, though, is that the number of blocks for the single screen can get huge and make it hard to read.  The following image shows the main screen of the EPIF app, with the main payment view set to hidden, and the admin sub-screen set to visible:
-
-</i><img src="./images/mit_ai2_admin_screen.png" width="300" height="300">
+3.  To create the sense of multiple screens but using only one physical screen, use multiple Vertical layouts for each screen, and set the visible checkbox to on and off to see them in the developer view.  The advantage of having just one physical screen and hide/view the various Vertical layouts is that you can use the block code (variables/methods) across the components, whereas doing so between physical screens is difficult.  The disadvantage, though, is that the number of blocks for the single screen can get huge and make it hard to read.  The following image shows the main screen of the EPIF app, with the main payment view set to hidden, and the admin sub-screen set to visible:</i>
+<img src="./images/mit_ai2_admin_screen.png" width="300" height="300">
 
 
 
