@@ -13,6 +13,9 @@ When a customer wants to apply (spend) his/her tokens, s/he asks the cashier to 
 ## Example Use Case
 Example: a customer, Bill, wants to buy a beer for $5, but wants to use $2.50 worth of his tokens.  He gives the cashier $2.50 cash, and then asks the cashier to apply the other $2.50 from his token account.  The cashier uses the app to decrement $2.50 worth of tokens from Bill's account.  Bill now has (X-2.5) worth of tokens in his account.  Additionally, the app keeps track of the total number of tokens being used for the day.  At the end of the day, the app will report the number of tokens that were used for the day.
 
+## Limitations
+This is for a small business that does not have the funds to support either a subscription-based cloud service nor an on-presence system that would require upkeep by a technical administrator.  The business will also not support a subscription for Apple-based SDK developer.  In essence, everything must be free to develop and free to deploy.  As a result, the app is limited to Android only.
+
 ## Design Info
 EPIF is an MIT AI2 program.  It uses the SimpleSqlite extension for persisting customer and payment information.  The datababse contains three tables:
 1. A `customer` table that contains customer name and number of available tokens
