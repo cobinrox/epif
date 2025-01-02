@@ -37,11 +37,13 @@ The main screen is designed as a single program app (SPA), consisting of the mai
 
 #### Main Payment View
 This is the main screen.  Here, a cashier highlights a customer and, if the customer has tokens avaialable (i.e. more than 0 tokens), then the text entry in the middle of the screen is enabled and the cashier can enter the amount of tokesn the customer wants to spend.  The APPLY button will be enabled only if the number of tokens to spend is less than or equal to the number of tokens that the customer has in his/her account.  The cashier can then click the APPLY button, which brings up the payment confirmation screen.
+
 <img src="./images/mainscreen.png" width="200" height="300">
 
 
 #### Payment Confirmation View
 This screen appears when the cashier presses the APPLY button.  If the OK button is pressed, then the number of tokens entered on the main screen will be deleted from the customer's account (in the Sqlite customer table) and the amount of tokens used during the day will be updated  (in the Sqlite orders table)
+
 <img src="./images/mit_ai2_confirm2.png" width="200" height="200">
 
 
